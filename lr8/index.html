@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра: У кого більше число</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 id="welcomeMessage">Вітаємо, Користувач!</h1>
+        <div class="game">
+            <div class="score">
+                <div id="userLabel">Користувач</div>
+                <div class="circle" id="userNumber">1</div>
+                <div class="scoreDisplay">Рахунок: <span id="userScore">0</span></div>
+            </div>
+            <button id="generateButton">Грати</button>
+            <div class="score">
+                <div id="computerLabel">Комп'ютер</div>
+                <div class="circle" id="computerNumber">1</div>
+                <div class="scoreDisplay">Рахунок: <span id="computerScore">0</span></div>
+            </div>
+        </div>
+        <p id="resultMessage"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

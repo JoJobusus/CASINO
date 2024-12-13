@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гра "21"</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Гра "21"</h1>
+    <div class="scores">
+      <div class="player-score">
+        <h2><span id="player-name">Гравець</span></h2>
+        <p>Очки: <span id="player-score">0</span></p>
+      </div>
+      <div id="game-score">Натисніть кнопку для початку гри</div>
+      <div class="computer-score">
+        <h2>Комп'ютер</h2>
+        <p>Очки: <span id="computer-score">0</span></p>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <img id="player-card" src="img/card-back.png" alt="Карта гравця">
+      </div>
+      <div class="card">
+        <img id="computer-card" src="img/card-back.png" alt="Карта комп'ютера">
+      </div>
+    </div>
+    <button id="generate-btn">Згенерувати карти</button>
+    <button id="restart-btn" style="display: none;">Рестарт гри</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

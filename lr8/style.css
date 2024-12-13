@@ -1,0 +1,121 @@
+/* Основні стилі для всіх екранів */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url('img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+.game-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid #333;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.game {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 4px solid #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scoreDisplay {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#resultMessage {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #333;
+}
+
+.result-win {
+    color: #4CAF50;
+}
+
+.result-lose {
+    color: #e74c3c;
+}
+
+.result-draw {
+    color: #f39c12;
+}
+
+/* Адаптивні стилі для маленьких екранів */
+@media (max-width: 768px) {
+    .game {
+        flex-direction: column;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+        font-size: 2em;
+    }
+
+    button {
+        width: 90%;
+        font-size: 1.3em;
+    }
+
+    .scoreDisplay {
+        font-size: 1em;
+    }
+}

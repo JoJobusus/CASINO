@@ -1,0 +1,93 @@
+/* Основные стили */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('./img/background-image.jpg') no-repeat center center fixed; /* Фоновое изображение */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Контейнер шара */
+.ball-container {
+    width: 85vw;
+    max-width: 400px;
+    height: 85vw;
+    max-height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./img/ball.png') no-repeat center center; /* картинка шара */
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Контейнер для ввода */
+.input-container {
+    position: absolute;
+    top: -60px;
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    max-width: 350px;
+    justify-content: center;
+}
+
+/* Поле ввода */
+.question-input {
+    width: 65%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Кнопка */
+.ask-button {
+    padding: 10px 16px;
+    font-size: 18px;
+    background-color: #6200ea;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.ask-button:hover {
+    background-color: #4a00c2;
+}
+
+/* Стиль текста ответа */
+.response {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Анимация появления текста */
+.fade-in {
+    opacity: 1;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .ball-container {
+        width: 90vw;
+        height: 90vw;
+    }
+    .response {
+        font-size: 20px;
+    }
+}
